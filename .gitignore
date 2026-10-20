@@ -9,5 +9,9 @@
 !/skills/
 /skills/*
 !/skills/raise-the-bar/
+!/skills/ask-joey/
+!/skills/website-audit/
+!/skills/local-seo-audit/
+!/skills/google-ads-audit/
 .DS_Store
 .hatch/
