@@ -5,9 +5,32 @@
     "url": "https://joeyfarbstein.com"
   },
   "metadata": {
-    "description": "Joey Farbstein's free skills for Claude Code: raise-the-bar and hatch."
+    "description": "Joey Farbstein's free skills: ask-joey plus three marketing audits for contractors (website, local SEO, Google Ads), and raise-the-bar and hatch for people who build with AI."
   },
   "plugins": [
+    {
+      "name": "ask-joey",
+      "source": "./",
+      "strict": false,
+      "version": "0.1.0",
+      "description": "Ask Joey about your marketing. For contractors and home service owners: /ask-joey routes you to the right audit, then /website-audit, /local-seo-audit and /google-ads-audit let an AI drive your browser and hand back one page of findings each. Read-only.",
+      "category": "productivity",
+      "keywords": [
+        "contractors",
+        "home services",
+        "marketing audit",
+        "google ads",
+        "local seo",
+        "google business profile",
+        "website"
+      ],
+      "skills": [
+        "./skills/ask-joey",
+        "./skills/website-audit",
+        "./skills/local-seo-audit",
+        "./skills/google-ads-audit"
+      ]
+    },
     {
       "name": "raise-the-bar",
       "source": "./",
@@ -15,8 +38,16 @@
       "version": "0.1.0",
       "description": "The AI can't grade its own work. A fresh critic says SHIP or NOT YET and names the one thing to fix. Loops up to 3 rounds.",
       "category": "productivity",
-      "keywords": ["critique", "review", "quality", "self-check", "workflow"],
-      "skills": ["./skills/raise-the-bar"]
+      "keywords": [
+        "critique",
+        "review",
+        "quality",
+        "self-check",
+        "workflow"
+      ],
+      "skills": [
+        "./skills/raise-the-bar"
+      ]
     },
     {
       "name": "hatch",
@@ -26,7 +57,14 @@
       },
       "description": "Turn a fuzzy problem, half-baked idea, or risky decision into a shipped, defended result. Frame, diverge, judge, red-team, build, ship-gate.",
       "category": "productivity",
-      "keywords": ["ideation", "decision-making", "red-team", "critique", "council", "workflow"]
+      "keywords": [
+        "ideation",
+        "decision-making",
+        "red-team",
+        "critique",
+        "council",
+        "workflow"
+      ]
     }
   ]
 }
